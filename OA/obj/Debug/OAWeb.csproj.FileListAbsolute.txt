@@ -1,0 +1,10 @@
+C:\workspace\OA\OA\OA\bin\OA.dll
+C:\workspace\OA\OA\OA\bin\OA.pdb
+C:\workspace\OA\OA\OA\bin\OA.BLL.dll
+C:\workspace\OA\OA\OA\bin\OA.DAL.dll
+C:\workspace\OA\OA\OA\bin\CanYouLib.Framework.dll
+C:\workspace\OA\OA\OA\bin\OA.BLL.pdb
+C:\workspace\OA\OA\OA\bin\OA.DAL.pdb
+C:\workspace\OA\OA\OA\obj\Debug\ResolveAssemblyReference.cache
+C:\workspace\OA\OA\OA\obj\Debug\OA.dll
+C:\workspace\OA\OA\OA\obj\Debug\OA.pdb

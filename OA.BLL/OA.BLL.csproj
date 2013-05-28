@@ -1,0 +1,299 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{522E9B3C-EAA9-4F18-80DC-F30057428B2D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OA.BLL</RootNamespace>
+    <AssemblyName>OA.BLL</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AspNetPager, Version=7.3.2.0, Culture=neutral, PublicKeyToken=fb0a0fe055d40fd4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\OA\bin\AspNetPager.dll</HintPath>
+    </Reference>
+    <Reference Include="CanYouLib.Framework, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\CanYouLib.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="COM.Excel, Version=1.1.1606.17082, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\COM.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Excel, Version=1.5.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="LTP.Common, Version=1.0.2188.26167, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\LTP.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="OA.DAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\OA.DAL\bin\Debug\OA.DAL.dll</HintPath>
+    </Reference>
+    <Reference Include="SubSonic, Version=2.1.0.0, Culture=neutral, PublicKeyToken=eadb47849839a332, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\OA.DAL\bin\SubSonic.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActionInfo.cs" />
+    <Compile Include="ActionInfoController.cs" />
+    <Compile Include="ActionMasterInfo.cs" />
+    <Compile Include="ActionMasterInfoController.cs" />
+    <Compile Include="AssetInfo.cs" />
+    <Compile Include="BasEmScoreInfo.cs" />
+    <Compile Include="BLLUtil\CachedEntityCommander.cs" />
+    <Compile Include="BLLUtil\EntityObject.cs" />
+    <Compile Include="BLLUtil\SortDic.cs" />
+    <Compile Include="BLLUtil\SortDirection.cs" />
+    <Compile Include="BLLUtil\SubsonicHelper.cs" />
+    <Compile Include="BusinessExpInfo.cs" />
+    <Compile Include="CarApplyInfo.cs" />
+    <Compile Include="ClientInfo.cs" />
+    <Compile Include="Common.cs" />
+    <Compile Include="ContactInfo.cs" />
+    <Compile Include="ContractApplyInfo.cs" />
+    <Compile Include="ContractInfo.cs" />
+    <Compile Include="DayInfo.cs" />
+    <Compile Include="DayScoreInfo.cs" />
+    <Compile Include="EmployeeInfo.cs" />
+    <Compile Include="FileApplyInfo.cs" />
+    <Compile Include="FileInfo.cs" />
+    <Compile Include="HolidayApplyInfo.cs" />
+    <Compile Include="MainProjectCreateInfo.cs" />
+    <Compile Include="MasterInfo.cs" />
+    <Compile Include="MessageInfo.cs" />
+    <Compile Include="NoticeInfo.cs" />
+    <Compile Include="OutRegistInfo.cs" />
+    <Compile Include="OverTimeInfo.cs" />
+    <Compile Include="OfferPriceInfo.cs" />
+    <Compile Include="partial\AssetInfo.cs" />
+    <Compile Include="partial\AssetInfoController.cs" />
+    <Compile Include="partial\AssistantScoreInfo.cs" />
+    <Compile Include="partial\AssistantScoreInfoController.cs" />
+    <Compile Include="partial\BasEmScoreInfo.cs" />
+    <Compile Include="partial\BasEmScoreInfoController.cs" />
+    <Compile Include="partial\BusinessExpInfo.cs" />
+    <Compile Include="partial\BusinessExpInfoController.cs" />
+    <Compile Include="partial\CarApplyInfo.cs" />
+    <Compile Include="partial\CarApplyInfoController.cs" />
+    <Compile Include="partial\ClientInfo.cs" />
+    <Compile Include="partial\ClientInfoController.cs" />
+    <Compile Include="partial\ClientLevelInfo.cs" />
+    <Compile Include="partial\ClientLevelInfoController.cs" />
+    <Compile Include="partial\ClientTypeInfo.cs" />
+    <Compile Include="partial\ClientTypeInfoController.cs" />
+    <Compile Include="partial\ContactInfo.cs" />
+    <Compile Include="partial\ContactInfoController.cs" />
+    <Compile Include="partial\ContractApplyInfo.cs" />
+    <Compile Include="partial\ContractApplyInfoController.cs" />
+    <Compile Include="partial\ContractFileInfo.cs" />
+    <Compile Include="partial\ContractFileInfoController.cs" />
+    <Compile Include="partial\ContractInfo.cs" />
+    <Compile Include="partial\ContractInfoController.cs" />
+    <Compile Include="partial\ContractTypeInfo.cs" />
+    <Compile Include="partial\ContractTypeInfoController.cs" />
+    <Compile Include="partial\DayInfo.cs" />
+    <Compile Include="partial\DayInfoController.cs" />
+    <Compile Include="partial\DayRoleInfo.cs" />
+    <Compile Include="partial\DayRoleInfoController.cs" />
+    <Compile Include="partial\DayScoreInfo.cs" />
+    <Compile Include="partial\DayScoreInfoController.cs" />
+    <Compile Include="partial\DepartInfo.cs" />
+    <Compile Include="partial\DepartInfoController.cs" />
+    <Compile Include="partial\DriverScoreInfo.cs" />
+    <Compile Include="partial\DriverScoreInfoController.cs" />
+    <Compile Include="partial\EducationInfo.cs" />
+    <Compile Include="partial\EducationInfoController.cs" />
+    <Compile Include="partial\EmDangInfo.cs" />
+    <Compile Include="partial\EmDangInfoController.cs" />
+    <Compile Include="partial\EmLevelInfo.cs" />
+    <Compile Include="partial\EmLevelInfoController.cs" />
+    <Compile Include="partial\EmployeeBExpInfo.cs" />
+    <Compile Include="partial\EmployeeBExpInfoController.cs" />
+    <Compile Include="partial\EmployeeInfo.cs" />
+    <Compile Include="partial\EmployeeInfoController.cs" />
+    <Compile Include="partial\EvaluateLevelInfo.cs" />
+    <Compile Include="partial\EvaluateLevelInfoController.cs" />
+    <Compile Include="partial\FileApplyInfo.cs" />
+    <Compile Include="partial\FileApplyInfoController.cs" />
+    <Compile Include="partial\FileEmployeeInfo.cs" />
+    <Compile Include="partial\FileEmployeeInfoController.cs" />
+    <Compile Include="partial\FileInfo.cs" />
+    <Compile Include="partial\FileInfoController.cs" />
+    <Compile Include="partial\FileOfApplyInfo.cs" />
+    <Compile Include="partial\FileOfApplyInfoController.cs" />
+    <Compile Include="partial\FilePermissionInfo.cs" />
+    <Compile Include="partial\FilePermissionInfoController.cs" />
+    <Compile Include="partial\FileTypeInfo.cs" />
+    <Compile Include="partial\FileTypeInfoController.cs" />
+    <Compile Include="partial\FrontScoreInfo.cs" />
+    <Compile Include="partial\FrontScoreInfoController.cs" />
+    <Compile Include="partial\HolidayApplyInfo.cs" />
+    <Compile Include="partial\HolidayApplyInfoController.cs" />
+    <Compile Include="partial\HolidayTypeInfo.cs" />
+    <Compile Include="partial\HolidayTypeInfoController.cs" />
+    <Compile Include="partial\LanguageInfo.cs" />
+    <Compile Include="partial\LanguageInfoController.cs" />
+    <Compile Include="partial\MainBusinessExpInfo.cs" />
+    <Compile Include="partial\MainBusinessExpInfoController.cs" />
+    <Compile Include="partial\MainOfferPriceInfo.cs" />
+    <Compile Include="partial\MainOfferPriceInfoController.cs" />
+    <Compile Include="partial\MainProjectCreateInfo.cs" />
+    <Compile Include="partial\MainProjectCreateInfoController.cs" />
+    <Compile Include="partial\MainProjectExecuteInfo.cs" />
+    <Compile Include="partial\MainProjectExecuteInfoController.cs" />
+    <Compile Include="partial\MainSpecialExpInfo.cs" />
+    <Compile Include="partial\MainSpecialExpInfoController.cs" />
+    <Compile Include="partial\MainWorkSheetInfo.cs" />
+    <Compile Include="partial\MainWorkSheetInfoController.cs" />
+    <Compile Include="partial\MarketScoreInfo.cs" />
+    <Compile Include="partial\MarketScoreInfoController.cs" />
+    <Compile Include="partial\MasterInfo.cs" />
+    <Compile Include="partial\MasterInfoController.cs" />
+    <Compile Include="partial\MessageInfo.cs" />
+    <Compile Include="partial\MessageInfoController.cs" />
+    <Compile Include="partial\MonthInfo.cs" />
+    <Compile Include="partial\MonthInfoController.cs" />
+    <Compile Include="partial\NoticeInfo.cs" />
+    <Compile Include="partial\NoticeInfoController.cs" />
+    <Compile Include="partial\NurseScoreInfo.cs" />
+    <Compile Include="partial\NurseScoreInfoController.cs" />
+    <Compile Include="partial\OfferFileInfo.cs" />
+    <Compile Include="partial\OfferFileInfoController.cs" />
+    <Compile Include="partial\OfferPriceInfo.cs" />
+    <Compile Include="partial\OfferPriceInfoController.cs" />
+    <Compile Include="partial\OfferPriceTypeInfo.cs" />
+    <Compile Include="partial\OfferPriceTypeInfoController.cs" />
+    <Compile Include="partial\OperationInfo.cs" />
+    <Compile Include="partial\OperationInfoController.cs" />
+    <Compile Include="partial\OpProRoleInfo.cs" />
+    <Compile Include="partial\OpProRoleInfoController.cs" />
+    <Compile Include="partial\OtGroupInfo.cs" />
+    <Compile Include="partial\OtGroupInfoController.cs" />
+    <Compile Include="partial\OutRegistInfo.cs" />
+    <Compile Include="partial\OutRegistInfoController.cs" />
+    <Compile Include="partial\OverTimeInfo.cs" />
+    <Compile Include="partial\OverTimeInfoController.cs" />
+    <Compile Include="partial\PoliticsInfo.cs" />
+    <Compile Include="partial\PoliticsInfoController.cs" />
+    <Compile Include="partial\PositionInfo.cs" />
+    <Compile Include="partial\PositionInfoController.cs" />
+    <Compile Include="partial\ProcessMasterInfo.cs" />
+    <Compile Include="partial\ProcessMasterInfoController.cs" />
+    <Compile Include="partial\ProductTypeInfo.cs" />
+    <Compile Include="partial\ProductTypeInfoController.cs" />
+    <Compile Include="partial\ProjectCreateInfo.cs" />
+    <Compile Include="partial\ProjectCreateInfoController.cs" />
+    <Compile Include="partial\ProjectLevelInfo.cs" />
+    <Compile Include="partial\ProjectLevelInfoController.cs" />
+    <Compile Include="partial\ProjectStepInfo.cs" />
+    <Compile Include="partial\ProjectStepInfoController.cs" />
+    <Compile Include="partial\ProjectTypeInfo.cs" />
+    <Compile Include="partial\ProjectTypeInfoController.cs" />
+    <Compile Include="partial\RelateBExpInfo.cs" />
+    <Compile Include="partial\RelateBExpInfoController.cs" />
+    <Compile Include="partial\RelateInfo.cs" />
+    <Compile Include="partial\RelateInfoController.cs" />
+    <Compile Include="partial\RoleInfo.cs" />
+    <Compile Include="partial\RoleInfoController.cs" />
+    <Compile Include="partial\RoleMasterInfo.cs" />
+    <Compile Include="partial\RoleMasterInfoController.cs" />
+    <Compile Include="partial\SiteInfo.cs" />
+    <Compile Include="partial\SiteInfoController.cs" />
+    <Compile Include="partial\SpecialExpInfo.cs" />
+    <Compile Include="partial\SpecialExpInfoController.cs" />
+    <Compile Include="partial\StampFileTypeInfo.cs" />
+    <Compile Include="partial\StampFileTypeInfoController.cs" />
+    <Compile Include="partial\StampInfo.cs" />
+    <Compile Include="partial\StampInfoController.cs" />
+    <Compile Include="partial\StampTypeInfo.cs" />
+    <Compile Include="partial\StampTypeInfoController.cs" />
+    <Compile Include="partial\StateInfo.cs" />
+    <Compile Include="partial\StateInfoController.cs" />
+    <Compile Include="partial\SupplyInfo.cs" />
+    <Compile Include="partial\SupplyInfoController.cs" />
+    <Compile Include="partial\TaskInfo.cs" />
+    <Compile Include="partial\TaskInfoController.cs" />
+    <Compile Include="partial\TechEmScoreInfo.cs" />
+    <Compile Include="partial\TechEmScoreInfoController.cs" />
+    <Compile Include="partial\TechMaScoreInfo.cs" />
+    <Compile Include="partial\TechMaScoreInfoController.cs" />
+    <Compile Include="partial\ToolInfo.cs" />
+    <Compile Include="partial\ToolInfoController.cs" />
+    <Compile Include="partial\ToolNumInfo.cs" />
+    <Compile Include="partial\ToolNumInfoController.cs" />
+    <Compile Include="partial\UnitInfo.cs" />
+    <Compile Include="partial\UnitInfoController.cs" />
+    <Compile Include="partial\WeekInfo.cs" />
+    <Compile Include="partial\WeekInfoController.cs" />
+    <Compile Include="partial\WeekScoreInfo.cs" />
+    <Compile Include="partial\WeekScoreInfoController.cs" />
+    <Compile Include="partial\WeekSumInfo.cs" />
+    <Compile Include="partial\WeekSumInfoController.cs" />
+    <Compile Include="partial\WorkToolSumInfo.cs" />
+    <Compile Include="partial\WorkToolSumInfoController.cs" />
+    <Compile Include="partial\YearInfo.cs" />
+    <Compile Include="partial\YearInfoController.cs" />
+    <Compile Include="partial\YeWuInfo.cs" />
+    <Compile Include="partial\YeWuInfoController.cs" />
+    <Compile Include="ProjectCreateInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoleInfo.cs" />
+    <Compile Include="SheetNums.cs" />
+    <Compile Include="SpecialExpInfo.cs" />
+    <Compile Include="StampInfo.cs" />
+    <Compile Include="StateInfo.cs" />
+    <Compile Include="SupplyInfo.cs" />
+    <Compile Include="TaskInfo.cs" />
+    <Compile Include="TechEmScoreInfo.cs" />
+    <Compile Include="TechMaScoreInfo.cs" />
+    <Compile Include="ToolInfo.cs" />
+    <Compile Include="UI.cs" />
+    <Compile Include="WorkToolSumInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

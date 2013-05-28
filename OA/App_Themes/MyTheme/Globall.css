@@ -1,0 +1,76 @@
+body
+{
+}
+
+.Tb_Blank { 
+           width:70%;
+           font-weight: bold; 
+           font-size: 10pt; 
+           text-align:center; 
+           vertical-align: middle; 
+           word-break: break-all; 
+}
+ .Tb_Blank td { 
+          height:50px;
+}
+
+.Tb_Blank1 { 
+           width:100%;
+           font-weight: bold; 
+           font-size: 11pt; 
+           text-align:center; 
+           vertical-align: middle; 
+}
+
+
+
+.Tb_Common { 
+           width:100%; 
+           border-collapse:collapse; 
+           text-align:center; 
+           vertical-align: middle; 
+           word-break: break-all; 
+           font-size:9pt;
+           font-weight:normal; 
+} 
+.Tb_Common td { 
+          border:solid #AFAFAF 1px; 
+          line-height:20px; 
+          padding:1px 3px 1px 3px; 
+          height:25px; 
+}
+
+.Tb_Common1 { 
+           width:100%; 
+           border-collapse:collapse; 
+           text-align:center; 
+           vertical-align: middle; 
+           word-break: break-all; 
+           font-size:11pt;
+           font-weight:normal; 
+} 
+
+
+
+.Tb_Button {
+           margin:0px auto; 
+           font-weight: bold; 
+           font-size: 9pt; 
+           text-align:center; 
+           vertical-align: middle; 
+          word-break: break-all; 
+} 
+.Tb_Button td {
+         height:50px; 
+         width:120px; 
+}
+
+#btn1
+{
+	position:relative;
+}
+
+.Input1
+{
+	width:90%;
+}

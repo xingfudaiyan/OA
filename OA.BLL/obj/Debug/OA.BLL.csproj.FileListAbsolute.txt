@@ -1,0 +1,16 @@
+C:\workspace\OA\OA\OA.BLL\bin\Debug\OA.BLL.dll
+C:\workspace\OA\OA\OA.BLL\bin\Debug\OA.BLL.pdb
+C:\workspace\OA\OA\OA.BLL\bin\Debug\AspNetPager.dll
+C:\workspace\OA\OA\OA.BLL\bin\Debug\CanYouLib.Framework.dll
+C:\workspace\OA\OA\OA.BLL\bin\Debug\COM.Excel.dll
+C:\workspace\OA\OA\OA.BLL\bin\Debug\Excel.dll
+C:\workspace\OA\OA\OA.BLL\bin\Debug\log4net.dll
+C:\workspace\OA\OA\OA.BLL\bin\Debug\LTP.Common.dll
+C:\workspace\OA\OA\OA.BLL\bin\Debug\OA.DAL.dll
+C:\workspace\OA\OA\OA.BLL\bin\Debug\SubSonic.dll
+C:\workspace\OA\OA\OA.BLL\bin\Debug\office.dll
+C:\workspace\OA\OA\OA.BLL\bin\Debug\Microsoft.Vbe.Interop.dll
+C:\workspace\OA\OA\OA.BLL\bin\Debug\OA.DAL.pdb
+C:\workspace\OA\OA\OA.BLL\obj\Debug\ResolveAssemblyReference.cache
+C:\workspace\OA\OA\OA.BLL\obj\Debug\OA.BLL.dll
+C:\workspace\OA\OA\OA.BLL\obj\Debug\OA.BLL.pdb

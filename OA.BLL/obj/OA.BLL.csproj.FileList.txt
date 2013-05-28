@@ -1,0 +1,14 @@
+bin\Debug\OA.BLL.dll
+bin\Debug\OA.BLL.pdb
+bin\Debug\AspNetPager.dll
+bin\Debug\CanYouLib.Framework.dll
+bin\Debug\COM.Excel.dll
+bin\Debug\Excel.dll
+bin\Debug\log4net.dll
+bin\Debug\LTP.Common.dll
+bin\Debug\OA.DAL.dll
+bin\Debug\SubSonic.dll
+bin\Debug\OA.DAL.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\OA.BLL.dll
+obj\Debug\OA.BLL.pdb

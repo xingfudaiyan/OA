@@ -1,0 +1,40 @@
+<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>
+<asp:TextBox runat="server" Width="98%" />
+<asp:TextBox runat="server" Width="93%" SkinId="skinid1" />
+<asp:TextBox runat="server" Width="78%" SkinId="skinid3" />
+
+<asp:TextBox runat="server" Width="15%" SkinId="skinid4" />
+<asp:TextBox runat="server" Width="65%" SkinId="skinid5" />
+<asp:TextBox runat="server" Width="20%" SkinId="skinid6" />
+
+
+
+<asp:TextBox runat="server" Height="120px" Width="90%"  SkinId="txtHeight120" />
+<asp:TextBox runat="server" Height="120px" Width="98%"  SkinId="txtHeight121" />
+
+<asp:DropDownList runat="server" Width="30%" SkinId="ddl30" />
+<asp:DropDownList runat="server" Width="78%" SkinId="skinid2" />
+<asp:DropDownList runat="server" Width="50%" SkinId="ddl1" />
+<asp:DropDownList runat="server" Width="90%" SkinId="ddl90" />
+
+<asp:RadioButtonList runat="server" Margin="auto" SkinId="rbl1" />
+
+<asp:FileUpload  runat="server" Width="98%" SkinId="fu90" />
+<asp:FileUpload  runat="server" Width="70%" SkinId="fu70" />
+
+
+ 

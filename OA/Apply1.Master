@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Apply1.master.cs" Inherits="OA.Apply1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<script language="javascript" defer="defer" type="text/javascript" src="/My97DatePicker/WdatePicker.js"> 
+<LINK rel="stylesheet" type="text/css" href="My97DatePicker/skin/default/datepicker.css" />
+</script> 
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title>无标题页</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table class="Tb_Blank" style="margin-left:20%; width:60%;">
+            <tr>
+                <td style="text-align:right;">
+                    <img src="../images/logo.jpg" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:ContentPlaceHolder ID="Content1" runat="server"></asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td style="height:40px;">
+                    <span style="font-size:10pt;">上海君众信息科技有限公司</span><br />
+                    <span style="color:Gray;">上海市丁香路1066弄中邦晶座苑27号 &nbsp &nbsp 邮编:200135  &nbsp &nbsp 电话:86-021-68543120  &nbsp &nbsp 传真:86-021-68543121</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:ContentPlaceHolder ID="Content2" runat="server"></asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+        </div>
+    </form>
+</body>
+</html>
+
+

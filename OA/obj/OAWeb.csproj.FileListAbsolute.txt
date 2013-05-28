@@ -1,0 +1,48 @@
+E:\JZOASYS\OA\OA\bin\OA.dll
+E:\JZOASYS\OA\OA\bin\OA.pdb
+E:\JZOASYS\OA\OA\bin\OA.BLL.dll
+E:\JZOASYS\OA\OA\bin\OA.DAL.dll
+E:\JZOASYS\OA\OA\bin\CanYouLib.Framework.dll
+E:\JZOASYS\OA\OA\bin\OA.BLL.pdb
+E:\JZOASYS\OA\OA\bin\OA.DAL.pdb
+E:\JZOASYS\OA\OA\obj\Debug\ResolveAssemblyReference.cache
+E:\JZOASYS\OA\OA\obj\Debug\OA.dll
+E:\JZOASYS\OA\OA\obj\Debug\OA.pdb
+D:\Documents and Settings\liubingju\桌面\OA\OA\bin\OA.dll
+D:\Documents and Settings\liubingju\桌面\OA\OA\bin\OA.pdb
+D:\Documents and Settings\liubingju\桌面\OA\OA\bin\OA.BLL.dll
+D:\Documents and Settings\liubingju\桌面\OA\OA\bin\OA.DAL.dll
+D:\Documents and Settings\liubingju\桌面\OA\OA\bin\CanYouLib.Framework.dll
+D:\Documents and Settings\liubingju\桌面\OA\OA\bin\OA.BLL.pdb
+D:\Documents and Settings\liubingju\桌面\OA\OA\bin\OA.DAL.pdb
+D:\Documents and Settings\liubingju\桌面\OA\OA\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\liubingju\桌面\OA\OA\obj\Debug\OA.dll
+D:\Documents and Settings\liubingju\桌面\OA\OA\obj\Debug\OA.pdb
+E:\JZOASYS\内网版\OA\OA\bin\OA.dll
+E:\JZOASYS\内网版\OA\OA\bin\OA.pdb
+E:\JZOASYS\内网版\OA\OA\bin\CanYouLib.Framework.dll
+E:\JZOASYS\内网版\OA\OA\bin\OA.BLL.pdb
+E:\JZOASYS\内网版\OA\OA\bin\OA.DAL.pdb
+E:\JZOASYS\内网版\OA\OA\obj\Debug\ResolveAssemblyReference.cache
+E:\JZOASYS\内网版\OA\OA\obj\Debug\OA.dll
+E:\JZOASYS\内网版\OA\OA\obj\Debug\OA.pdb
+C:\Documents and Settings\Administrator\桌面\JZOASYS\OA420\OA\OA\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\JZOASYS\OA420\OA\OA\obj\Debug\OA.dll
+C:\Documents and Settings\Administrator\桌面\JZOASYS\OA420\OA\OA\bin\OA.dll
+C:\Documents and Settings\Administrator\桌面\JZOASYS\OA420\OA\OA\bin\OA.pdb
+C:\Documents and Settings\Administrator\桌面\JZOASYS\OA420\OA\OA\bin\OA.BLL.dll
+C:\Documents and Settings\Administrator\桌面\JZOASYS\OA420\OA\OA\bin\OA.DAL.dll
+C:\Documents and Settings\Administrator\桌面\JZOASYS\OA420\OA\OA\bin\CanYouLib.Framework.dll
+C:\Documents and Settings\Administrator\桌面\JZOASYS\OA420\OA\OA\bin\OA.BLL.pdb
+C:\Documents and Settings\Administrator\桌面\JZOASYS\OA420\OA\OA\bin\OA.DAL.pdb
+C:\Documents and Settings\Administrator\桌面\JZOASYS\OA420\OA\OA\obj\Debug\OA.pdb
+E:\JZOASYS\OA420\OA\OA\obj\Debug\ResolveAssemblyReference.cache
+E:\JZOASYS\OA420\OA\OA\bin\OA.dll
+E:\JZOASYS\OA420\OA\OA\bin\OA.pdb
+E:\JZOASYS\OA420\OA\OA\bin\CanYouLib.Framework.dll
+E:\JZOASYS\OA420\OA\OA\bin\OA.BLL.pdb
+E:\JZOASYS\OA420\OA\OA\bin\OA.DAL.pdb
+E:\JZOASYS\OA420\OA\OA\obj\Debug\OA.dll
+E:\JZOASYS\OA420\OA\OA\obj\Debug\OA.pdb
+E:\JZOASYS\OA420\OA\OA\bin\OA.BLL.dll
+E:\JZOASYS\OA420\OA\OA\bin\OA.DAL.dll

@@ -1,0 +1,40 @@
+create table FileApply_tb
+(FileApplyId int not null primary key identity(1,1),
+ApplyTime nvarchar(50),
+FilesName nvarchar(50),
+FileType nvarchar(50),
+FileDes nvarchar(max),
+DepartView nvarchar(max),
+ManagerView nvarchar(max),
+FileOfApplyId int,
+State int,
+DepartName nvarchar(50),
+ApplyName nvarchar(50))
+
+
+create procedure getFileApply_sp
+@EmName nvarchar(50)
+as
+select FileApply_tb.*
+from FileApply_tb
+where FileApply_tb.ApplyName=@EmName
+
+create procedure DepartGv_sp
+@DepartName nvarchar(50)
+as
+
+select FileApply_tb.*
+from FileApply_tb
+where FileApply_tb.DepartName=@DepartName and FileApply_tb.state!=0
+
+create view vw_FileApplyManager
+
+SELECT     FileApplyId, ApplyTime, FilesName, FileType, FileDes, DepartView, ManagerView, State, DepartName, ApplyName
+FROM         dbo.FileApply_tb
+WHERE     (State > 2)
+
+create table FileOfApply_tb
+(FileOfApplyId int not null primary key identity(1,1),
+FileOfName nvarchar(100),
+PhysicalName nvarchar(100)
+)

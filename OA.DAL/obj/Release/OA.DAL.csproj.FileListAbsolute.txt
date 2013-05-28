@@ -1,0 +1,7 @@
+C:\workspace\OA\OA\OA.DAL\bin\Release\OA.DAL.dll
+C:\workspace\OA\OA\OA.DAL\bin\Release\OA.DAL.pdb
+C:\workspace\OA\OA\OA.DAL\bin\Release\AspNetPager.dll
+C:\workspace\OA\OA\OA.DAL\bin\Release\SubSonic.dll
+C:\workspace\OA\OA\OA.DAL\obj\Release\ResolveAssemblyReference.cache
+C:\workspace\OA\OA\OA.DAL\obj\Release\OA.DAL.dll
+C:\workspace\OA\OA\OA.DAL\obj\Release\OA.DAL.pdb

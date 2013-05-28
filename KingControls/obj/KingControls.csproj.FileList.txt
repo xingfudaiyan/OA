@@ -1,0 +1,6 @@
+bin\Debug\KingControls.dll
+bin\Debug\KingControls.pdb
+bin\Debug\AjaxPro.2.dll
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\KingControls.dll
+obj\Debug\KingControls.pdb

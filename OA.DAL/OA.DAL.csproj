@@ -1,0 +1,191 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ACBC3045-1D45-45EC-A7FB-86C0A77E8ACD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OA.DAL</RootNamespace>
+    <AssemblyName>OA.DAL</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AspNetPager, Version=7.3.2.0, Culture=neutral, PublicKeyToken=fb0a0fe055d40fd4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\OA\bin\AspNetPager.dll</HintPath>
+    </Reference>
+    <Reference Include="SubSonic, Version=2.1.0.0, Culture=neutral, PublicKeyToken=eadb47849839a332, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\SubSonic.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Action.cs" />
+    <Compile Include="ActionMaster.cs" />
+    <Compile Include="AllStructs.cs" />
+    <Compile Include="Asset.cs" />
+    <Compile Include="AssistantScore.cs" />
+    <Compile Include="BasEmScore.cs" />
+    <Compile Include="BusinessExp.cs" />
+    <Compile Include="CarApply.cs" />
+    <Compile Include="Client.cs" />
+    <Compile Include="ClientLevel.cs" />
+    <Compile Include="ClientType.cs" />
+    <Compile Include="Contact.cs" />
+    <Compile Include="Contract.cs" />
+    <Compile Include="ContractApply.cs" />
+    <Compile Include="ContractFile.cs" />
+    <Compile Include="ContractType.cs" />
+    <Compile Include="Day.cs" />
+    <Compile Include="DayRole.cs" />
+    <Compile Include="DayScore.cs" />
+    <Compile Include="Depart.cs" />
+    <Compile Include="DriverScore.cs" />
+    <Compile Include="Education.cs" />
+    <Compile Include="EmDang.cs" />
+    <Compile Include="EmLevel.cs" />
+    <Compile Include="Employee.cs" />
+    <Compile Include="EmployeeBExp.cs" />
+    <Compile Include="EvaluateLevel.cs" />
+    <Compile Include="File.cs" />
+    <Compile Include="FileApply.cs" />
+    <Compile Include="FileEmployee.cs" />
+    <Compile Include="FileOfApply.cs" />
+    <Compile Include="FilePermission.cs" />
+    <Compile Include="FileType.cs" />
+    <Compile Include="FrontScore.cs" />
+    <Compile Include="HolidayApply.cs" />
+    <Compile Include="HolidayType.cs" />
+    <Compile Include="Language.cs" />
+    <Compile Include="MainBusinessExp.cs" />
+    <Compile Include="MainOfferPrice.cs" />
+    <Compile Include="MainProjectCreate.cs" />
+    <Compile Include="MainProjectExecute.cs" />
+    <Compile Include="MainSpecialExp.cs" />
+    <Compile Include="MainWorkSheet.cs" />
+    <Compile Include="MarketScore.cs" />
+    <Compile Include="Master.cs" />
+    <Compile Include="Message.cs" />
+    <Compile Include="Month.cs" />
+    <Compile Include="Notice.cs" />
+    <Compile Include="NurseScore.cs" />
+    <Compile Include="OfferFile.cs" />
+    <Compile Include="OfferPrice.cs" />
+    <Compile Include="OfferPriceType.cs" />
+    <Compile Include="Operation.cs" />
+    <Compile Include="OpProRole.cs" />
+    <Compile Include="OtGroup.cs" />
+    <Compile Include="OutRegist.cs" />
+    <Compile Include="OverTime.cs" />
+    <Compile Include="Politics.cs" />
+    <Compile Include="Position.cs" />
+    <Compile Include="Process.cs" />
+    <Compile Include="ProcessMaster.cs" />
+    <Compile Include="ProductType.cs" />
+    <Compile Include="ProjectCreate.cs" />
+    <Compile Include="ProjectLevel.cs" />
+    <Compile Include="ProjectStep.cs" />
+    <Compile Include="ProjectType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Relate.cs" />
+    <Compile Include="RelateBExp.cs" />
+    <Compile Include="Role.cs" />
+    <Compile Include="RoleMaster.cs" />
+    <Compile Include="Site.cs" />
+    <Compile Include="SpecialExp.cs" />
+    <Compile Include="SPs.cs" />
+    <Compile Include="Stamp.cs" />
+    <Compile Include="StampFileType.cs" />
+    <Compile Include="StampType.cs" />
+    <Compile Include="State.cs" />
+    <Compile Include="Supply.cs" />
+    <Compile Include="Task.cs" />
+    <Compile Include="TechEmScore.cs" />
+    <Compile Include="TechMaScore.cs" />
+    <Compile Include="Tool.cs" />
+    <Compile Include="ToolNum.cs" />
+    <Compile Include="Unit.cs" />
+    <Compile Include="Vw_AssetList.cs" />
+    <Compile Include="Vw_AssisM.cs" />
+    <Compile Include="Vw_BasM.cs" />
+    <Compile Include="Vw_Client.cs" />
+    <Compile Include="Vw_ContactList.cs" />
+    <Compile Include="Vw_ContractApplyManager.cs" />
+    <Compile Include="Vw_Driveds.cs" />
+    <Compile Include="Vw_EmployeeIdOfAdmin.cs" />
+    <Compile Include="Vw_EmployeeIdOfDriver.cs" />
+    <Compile Include="Vw_EmployeeIdOfFinaceManager.cs" />
+    <Compile Include="Vw_EmployeeIdOfManager.cs" />
+    <Compile Include="Vw_EmployeeIdOfMarket.cs" />
+    <Compile Include="Vw_EmployeeIdOfTechManager.cs" />
+    <Compile Include="Vw_EmployeeInfo.cs" />
+    <Compile Include="Vw_ExAsset.cs" />
+    <Compile Include="Vw_FileApplyManager.cs" />
+    <Compile Include="Vw_FrontM.cs" />
+    <Compile Include="Vw_HolidayApplyOfManager.cs" />
+    <Compile Include="Vw_HolidayList.cs" />
+    <Compile Include="Vw_ListOffice.cs" />
+    <Compile Include="Vw_ListTool.cs" />
+    <Compile Include="Vw_MainProjectCreate.cs" />
+    <Compile Include="Vw_ManagerOfOffice.cs" />
+    <Compile Include="Vw_ManagerOfTool.cs" />
+    <Compile Include="Vw_MarketScore.cs" />
+    <Compile Include="Vw_MasterList.cs" />
+    <Compile Include="Vw_MaxNoticId.cs" />
+    <Compile Include="Vw_MsgGv.cs" />
+    <Compile Include="Vw_Notice.cs" />
+    <Compile Include="Vw_Nureseds.cs" />
+    <Compile Include="Vw_OutRegistAll.cs" />
+    <Compile Include="Vw_ProcessRole.cs" />
+    <Compile Include="Vw_ProjectApplyManager.cs" />
+    <Compile Include="Vw_RecvMaster.cs" />
+    <Compile Include="Vw_StampList.cs" />
+    <Compile Include="Vw_StampManager.cs" />
+    <Compile Include="Vw_TechEmScore.cs" />
+    <Compile Include="Vw_TechScore.cs" />
+    <Compile Include="Vw_UserRoleList.cs" />
+    <Compile Include="Vw_WksofTech.cs" />
+    <Compile Include="Week.cs" />
+    <Compile Include="WeekScore.cs" />
+    <Compile Include="WeekSum.cs" />
+    <Compile Include="WorkToolSum.cs" />
+    <Compile Include="Year.cs" />
+    <Compile Include="YeWu.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

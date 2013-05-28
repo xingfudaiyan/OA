@@ -1,0 +1,94 @@
+合同申请：
+（1）各部门员工、部门经理发起合同申请，总经理不需要合同申请
+（2）部门经理审批所在部门员工的审批，审批通过后交给总经理审批。
+ （3）部门经理发起的申请，总经理审批。
+
+（1）PreApplyTime 复制到ApplyTime
+（2）新增字段 DepartName，ApplyName，State
+
+合同表Contract_tb
+ContractId
+ContractFileId
+SignName
+ContractNum
+ContractName
+BeginDate
+MoneySum
+
+合同审批表ContractApply_tb
+ContractFileId
+SignName
+ContractNum
+ContractName
+BeginDate
+SheetNum
+ApplyDate
+ContractDes
+BigMoney
+SmallMoney
+SectionView
+ManagerView
+IsMoney
+Today
+ApplyName
+DepartName
+State
+
+调整数据
+update ContractApply_tb 
+set ContractApply_tb.ContractName=Contract_tb.ContractName,ContractApply_tb.BeginDate=Contract_tb.BeginDate,ContractApply_tb.ContractNum=Contract_tb.SheetNum
+from Contract_tb
+where ContractApply_tb.ContractId=Contract_tb.ContractId
+
+update ContractApply_tb 
+set ContractApply_tb.ApplyName=ContractApply_tb.ApplyPeople,ContractApply_tb.DepartName=ContractApply_tb.ApplyDepart,ContractApply_tb.ApplyTime=ContractApply_tb.PreApplyTime
+
+错
+update ContractApply_tb
+set ContractApply_tb.State=1
+where ContractApply_tb.IsOver1=1
+
+
+update ContractApply_tb
+set ContractApply_tb.UseStampType='合同章'
+
+delete 
+from Contract_tb
+where Contract_tb.IsAdd=0
+
+
+create procedure ContractApplyOfEm
+@ApplyName nvarchar(50)
+as
+select ContractApply_tb.*
+from ContractApply_tb
+where ContractApply_tb.ApplyName=@ApplyName
+
+create procedure ContractOfDepart
+@DepartName nvarchar(50)
+as
+select ContractApply_tb.*
+from ContractApply_tb
+where ContractApply_tb.DepartName=@DepartName and ContractApply_tb.State!=0
+
+vw_
+SELECT     ContractApplyId, ContractFileId, SignName, ContractNum, SheetNum, Today, ContractName, BeginDate, ApplyDate, ContractDes, BigMoney, 
+                      SmallMoney, UseStampType, SectionView, ManagerView, IsMoney, ApplyTime, ApplyName, DepartName, State
+FROM         dbo.ContractApply_tb
+WHERE     (State > 2)
+
+删除 
+MainContractApply_tb
+Vw_Contract 
+Vw_SumOfContract
+SPs.NameOfContract_Sp
+SPs.TypeOfContract_Sp
+SPs.BothOfContract_Sp
+SPs.NameSumOfContract_Sp
+SPs.TypeSumOfContract_Sp
+SPs.BothSumOfContract_Sp
+
+
+
+0:未提交 1:待部门领导审批 2:部门:修正 3: 待总经理审批 4 通过 5:总经理:修正
+                           

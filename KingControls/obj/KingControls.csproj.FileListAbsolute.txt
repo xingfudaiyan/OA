@@ -1,0 +1,6 @@
+E:\JZOASYS\OA\KingControls\bin\Debug\KingControls.dll
+E:\JZOASYS\OA\KingControls\bin\Debug\KingControls.pdb
+E:\JZOASYS\OA\KingControls\bin\Debug\AjaxPro.2.dll
+E:\JZOASYS\OA\KingControls\obj\Debug\ResolveAssemblyReference.cache
+E:\JZOASYS\OA\KingControls\obj\Debug\KingControls.dll
+E:\JZOASYS\OA\KingControls\obj\Debug\KingControls.pdb

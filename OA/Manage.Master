@@ -1,0 +1,128 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Manage.master.cs" Inherits="OA.Manage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<script language="javascript" defer="defer" type="text/javascript" src="/My97DatePicker/WdatePicker.js"> 
+<LINK rel="stylesheet" type="text/css" href="My97DatePicker/skin/default/datepicker.css" />
+</script> 
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>无标题页</title>
+    <script language=javascript type="text/javascript">
+        function expandcollapse(obj,row)
+        {
+            var div = document.getElementById(obj);
+            var img = document.getElementById('img' + obj);
+            
+            if (div.style.display == "none")
+            {
+                div.style.display = "block";
+                if (row == 'alt')
+                {
+                    img.src = "../images/minus.gif";
+                }
+                else
+                {
+                    img.src = "../images/minus.gif";
+                }
+                img.alt = "Close to view other Customers";
+            }
+            else
+            {
+                div.style.display = "none";
+                if (row == 'alt')
+                {
+                    img.src = "../images/plus.gif";
+                }
+                else
+                {
+                    img.src = "../images/plus.gif";
+                }
+                img.alt = "Expand to show Orders";
+            }
+        } 
+        </script>
+        
+        
+           <style type="text/css"> 
+            #winpop { width:200px; height:160px; position:absolute; right:0; bottom:0; border:1px solid #999999; margin:0; padding:1px; overflow:hidden;display:none; background:#FFFFFF} 
+            #winpop .title { width:100%; height:20px; line-height:20px; background:#3d9ccc; font-weight:bold; text-align:center; font-size:12px;} 
+            #winpop .con { width:100%; height:80px; line-height:20px; font-weight:bold; font-size:12px; color:#FF0000; text-decoration:underline; text-align:center} 
+            #silu { font-size:13px; color:#999999; position:absolute; right:0;bottom:0px; text-align:right; text-decoration:underline; line-height:22px;} 
+            .close { position:absolute; right:4px; top:-1px; color:#FFFFFF; cursor:pointer} 
+            </style>
+            
+            <script type="text/javascript">
+            //显示窗口
+            function show_pop(){
+                document.getElementById("winpop").style.display="block";
+                //调用changeH(4),每0.002秒向上移动一次 
+                timer=setInterval("changeH(4)",2);
+            } 
+            //隐藏窗口
+            function hid_pop(){
+                //调用changeH(-4),每0.002秒向下移动一次
+                timer=setInterval("changeH(-4)",2);  
+            } 
+            //测试通过
+            function changeH(addH) {
+                var MsgPop = document.getElementById("winpop"); 
+                //用parseInt将对象的高度转化为数字,以方便下面比较（JS读<style>中的height要用"currentStyle.height"）
+                var popH = parseInt( MsgPop.style.height || MsgPop.currentStyle.height );
+                //如果高度小于等于100(str>0)或高度大于等于4(str<0) 
+                if( popH <= 100 && addH > 0 || popH >= 4 && addH < 0 ) {
+                    //高度增加或减少4个象素
+                    MsgPop.style.height=(popH+addH).toString()+"px";
+                } else {
+                    //取消调用,意思就是如果高度超过100象素了,就不再增长了，或高度等于0象素了，就不再减少了 
+                    clearInterval(timer);
+                    //向上移动时窗口显示,向下移动时窗口隐藏
+                    MsgPop.style.display = addH > 0 ? "block" : "none";
+                }
+            }
+
+            function displayDIV()
+           {
+            var tempDIV=document.getElementById("winpop");
+            tempDIV.style.display='none';
+           
+           }
+           
+            
+
+            </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table class="Tb_Blank1" style="width:100%;">
+            <tr>
+                <td>
+                    <asp:ContentPlaceHolder ID="Content1" runat="server"></asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-top:5%;">
+                    <img src="../images/logo1.jpg" style="height:50px;"  /><br />
+                    <span style="font-size:10pt;">上海君众信息科技有限公司</span><br />
+                    <span style="color:Gray;">上海市丁香路1066弄中邦晶座苑27号 邮编:200135 电话:86-021-68543120 传真:86-021-68543121</span>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="winpop">
+       <div class="title" >您有新的消息<span class="close" onclick="hid_pop()">X</span></div> 
+       <div class="con">
+         <asp:HyperLink ID="hr1" runat="server" Text=""></asp:HyperLink><br />
+         <asp:HyperLink ID="hr2" runat="server" Text=""></asp:HyperLink><br />
+         <asp:HyperLink ID="hr3" runat="server" Text=""></asp:HyperLink><br />
+         <asp:HyperLink ID="hr4" runat="server" Text=""></asp:HyperLink><br />
+         <asp:HyperLink ID="hr5" runat="server" Text=""></asp:HyperLink><br />
+         <asp:HyperLink ID="hr6" runat="server" Text=""></asp:HyperLink><br />
+         <asp:HyperLink ID="hr7" runat="server" Text=""></asp:HyperLink>
+       </div>
+    </div>
+    </form>
+</body>
+</html>

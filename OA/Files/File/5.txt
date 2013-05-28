@@ -1,0 +1,87 @@
+
+
+
+
+
+ALTER PROCEDURE [dbo].[NumOfWorkSheet_sp]
+	@WorkSheetNum nvarchar(50),
+	@PreEmployeeName nvarchar(50)
+AS
+BEGIN
+	SET NOCOUNT ON;
+SELECT       WorkSheet_tb.*,WorkSheetType_tb.*,MainWorkSheet_tb.*
+FROM         dbo.WorkSheet_tb 
+Join         WorkSheetType_tb on WorkSheetType_tb.WorkSheetTypeId=WorkSheet_tb.WorkSheetTypeId
+Join         MainWorkSheet_tb on MainWorkSheet_tb.MainWorkSheetId=WorkSheet_tb.MainWorkSheetId
+WHERE        WorkSheet_tb.WorkSheetNum LIKE '%'+@WorkSheetNum+'%'  and WorkSheet_tb.PreEmployeeName=@PreEmployeeName and WorkSheet_tb.IsMain=1
+END
+
+ALTER PROCEDURE [dbo].[NumOfWorkSheet1_sp]
+	@WorkSheetNum nvarchar(50),
+	@SendEmployeeName nvarchar(50)
+AS
+BEGIN
+	SET NOCOUNT ON;
+SELECT       WorkSheet_tb.*,WorkSheetType_tb.*,MainWorkSheet_tb.*
+FROM         dbo.WorkSheet_tb 
+Join         WorkSheetType_tb on WorkSheetType_tb.WorkSheetTypeId=WorkSheet_tb.WorkSheetTypeId
+Join         MainWorkSheet_tb on MainWorkSheet_tb.MainWorkSheetId=WorkSheet_tb.MainWorkSheetId
+WHERE        WorkSheet_tb.WorkSheetNum LIKE '%'+@WorkSheetNum+'%'  and WorkSheet_tb.SendEmployeeName=@SendEmployeeName and WorkSheet_tb.IsMain=1
+END
+
+23
+
+ALTER PROCEDURE [dbo].[BothNameOfWorkSheet_sp]
+	@WorkSheetNum nvarchar(50),
+	@WorkSheetTypeId int,
+	@PreEmployeeName nvarchar(50)
+AS
+BEGIN
+	SET NOCOUNT ON;
+SELECT       WorkSheet_tb.*,WorkSheetType_tb.*,MainWorkSheet_tb.*
+FROM         dbo.WorkSheet_tb 
+Join         WorkSheetType_tb on WorkSheetType_tb.WorkSheetTypeId=WorkSheet_tb.WorkSheetTypeId
+Join         MainWorkSheet_tb on MainWorkSheet_tb.MainWorkSheetId=WorkSheet_tb.MainWorkSheetId
+WHERE        WorkSheet_tb.WorkSheetNum LIKE '%'+@WorkSheetNum+'%'and WorkSheet_tb.WorkSheetTypeId=@WorkSheetTypeId and WorkSheet_tb.PreEmployeeName=@PreEmployeeName and WorkSheet_tb.IsMain=1
+END
+
+123
+
+ALTER PROCEDURE [dbo].[ProjectFullNameOfCreate_sp]
+	@ProjectFullName nvarchar(50),
+	@PreEmployeeName nvarchar(50)
+AS
+BEGIN
+	SET NOCOUNT ON;
+SELECT       ProjectCreate_tb.*,MainProjectCreate_tb.*,MainProjectCreate_tb.*,Client_tb.*
+From        ProjectCreate_tb
+			Join MainProjectCreate_tb on MainProjectCreate_tb.MainProjectCreateId=ProjectCreate_tb.MainProjectCreateId
+			Join MainProject_tb on MainProject_tb.MainProjectId=ProjectCreate_tb.MainProjectId
+			Join Client_tb on Client_tb.ClientId=MainProjectCreate_tb.ClientId
+WHERE        MainProjectCreate_tb.ProjectName LIKE '%'+@ProjectFullName+'%' and ProjectCreate_tb.PreEmployeeName=@PreEmployeeName and ProjectCreate_tb.IsMain=1
+END
+1234
+
+ALTER PROCEDURE [dbo].[NameOfClient_sp]
+	@ClientName nvarchar(50)
+	
+AS
+BEGIN
+	SET NOCOUNT ON;
+SELECT       Client_tb.*,ClientLevel_tb.ClientLevelName
+FROM         Client_tb
+Join         ClientLevel_tb on Client_tb.ClientLevelId=ClientLevel_tb.ClientLevelId
+WHERE        Client_tb.ClientName LIKE '%'+@ClientName+'%' 
+END
+
+ALTER PROCEDURE [dbo].[BothOfClient_sp]
+	@ClientName nvarchar(50),
+	@ClientLevelId int
+AS
+BEGIN
+	SET NOCOUNT ON;
+SELECT       Client_tb.*,ClientLevel_tb.ClientLevelName
+FROM         Client_tb
+Join         ClientLevel_tb on Client_tb.ClientLevelId=ClientLevel_tb.ClientLevelId
+WHERE        Client_tb.ClientName Like '%'+@ClientName+'%' and Client_tb.ClientLevelId=@ClientLevelId
+END

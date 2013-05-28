@@ -1,0 +1,35 @@
+E:\JZOASYS\OA\OA.DAL\bin\Debug\OA.DAL.dll
+E:\JZOASYS\OA\OA.DAL\bin\Debug\OA.DAL.pdb
+E:\JZOASYS\OA\OA.DAL\bin\Debug\SubSonic.dll
+E:\JZOASYS\OA\OA.DAL\obj\Debug\ResolveAssemblyReference.cache
+E:\JZOASYS\OA\OA.DAL\obj\Debug\OA.DAL.dll
+E:\JZOASYS\OA\OA.DAL\obj\Debug\OA.DAL.pdb
+E:\JZOASYS\OA\OA.DAL\bin\Debug\AspNetPager.dll
+D:\Documents and Settings\liubingju\桌面\OA\OA.DAL\bin\Debug\OA.DAL.dll
+D:\Documents and Settings\liubingju\桌面\OA\OA.DAL\bin\Debug\OA.DAL.pdb
+D:\Documents and Settings\liubingju\桌面\OA\OA.DAL\bin\Debug\AspNetPager.dll
+D:\Documents and Settings\liubingju\桌面\OA\OA.DAL\bin\Debug\SubSonic.dll
+D:\Documents and Settings\liubingju\桌面\OA\OA.DAL\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\liubingju\桌面\OA\OA.DAL\obj\Debug\OA.DAL.dll
+D:\Documents and Settings\liubingju\桌面\OA\OA.DAL\obj\Debug\OA.DAL.pdb
+E:\JZOASYS\内网版\OA\OA.DAL\bin\Debug\OA.DAL.dll
+E:\JZOASYS\内网版\OA\OA.DAL\bin\Debug\OA.DAL.pdb
+E:\JZOASYS\内网版\OA\OA.DAL\bin\Debug\AspNetPager.dll
+E:\JZOASYS\内网版\OA\OA.DAL\bin\Debug\SubSonic.dll
+E:\JZOASYS\内网版\OA\OA.DAL\obj\Debug\ResolveAssemblyReference.cache
+E:\JZOASYS\内网版\OA\OA.DAL\obj\Debug\OA.DAL.dll
+E:\JZOASYS\内网版\OA\OA.DAL\obj\Debug\OA.DAL.pdb
+C:\Documents and Settings\Administrator\桌面\JZOASYS\OA420\OA\OA.DAL\bin\Debug\OA.DAL.dll
+C:\Documents and Settings\Administrator\桌面\JZOASYS\OA420\OA\OA.DAL\bin\Debug\OA.DAL.pdb
+C:\Documents and Settings\Administrator\桌面\JZOASYS\OA420\OA\OA.DAL\bin\Debug\AspNetPager.dll
+C:\Documents and Settings\Administrator\桌面\JZOASYS\OA420\OA\OA.DAL\bin\Debug\SubSonic.dll
+C:\Documents and Settings\Administrator\桌面\JZOASYS\OA420\OA\OA.DAL\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\JZOASYS\OA420\OA\OA.DAL\obj\Debug\OA.DAL.dll
+C:\Documents and Settings\Administrator\桌面\JZOASYS\OA420\OA\OA.DAL\obj\Debug\OA.DAL.pdb
+E:\JZOASYS\OA420\OA\OA.DAL\bin\Debug\OA.DAL.dll
+E:\JZOASYS\OA420\OA\OA.DAL\bin\Debug\OA.DAL.pdb
+E:\JZOASYS\OA420\OA\OA.DAL\bin\Debug\AspNetPager.dll
+E:\JZOASYS\OA420\OA\OA.DAL\bin\Debug\SubSonic.dll
+E:\JZOASYS\OA420\OA\OA.DAL\obj\Debug\ResolveAssemblyReference.cache
+E:\JZOASYS\OA420\OA\OA.DAL\obj\Debug\OA.DAL.dll
+E:\JZOASYS\OA420\OA\OA.DAL\obj\Debug\OA.DAL.pdb

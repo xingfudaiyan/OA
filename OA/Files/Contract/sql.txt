@@ -1,0 +1,138 @@
+create table MainTool_tb
+(
+MainToolId int identity(1,1) not null primary key,
+MainToolName nvarchar(1)
+)
+
+create table Tool_tb
+(
+ToolId int identity(1,1) not null primary key,
+Apply1EmployeeId int,
+Apply1EmployeeName nvarchar(50),
+Apply2EmployeeId int,
+Aplly3EmployeeId int,
+ApplyTime nvarchar(50),
+ApplyDate nvarchar(50),
+IsMain1 int,
+IsMain2 int,
+IsNewCreate int,
+States int,
+SignName int,
+MainToolId int,
+ImgUrl nvarchar(50),
+ToolNumId int
+
+)
+
+create table ToolNum_tb
+(
+ToolNumId int identity(1,1) not null primary key,
+Num1 nvarchar(20),
+Num2 nvarchar(20),
+Num3 nvarchar(20),
+Num4 nvarchar(20),
+Num5 nvarchar(20),
+Num6 nvarchar(20),
+Num7 nvarchar(20),
+Num8 nvarchar(20),
+Num9 nvarchar(20),
+Num10 nvarchar(20),
+Num11 nvarchar(20),
+Num12 nvarchar(20),
+Num13 nvarchar(20),
+Num14 nvarchar(20),
+Num15 nvarchar(20),
+Num16 nvarchar(20),
+Num17 nvarchar(20),
+Num18 nvarchar(20),
+Num19 nvarchar(20),
+Num20 nvarchar(20),
+Num21 nvarchar(20),
+Num22 nvarchar(20),
+Num23 nvarchar(20),
+Num24 nvarchar(20),
+Num25 nvarchar(20),
+Num26 nvarchar(20),
+Num27 nvarchar(20),
+Num28 nvarchar(20),
+Num29 nvarchar(20),
+Num30 nvarchar(20),
+Num31 nvarchar(20),
+Num32 nvarchar(20),
+Num33 nvarchar(20),
+Num34 nvarchar(20),
+Num35 nvarchar(20),
+Num36 nvarchar(20),
+Num37 nvarchar(20),
+Num38 nvarchar(20),
+Num39 nvarchar(20),
+Num40 nvarchar(20)
+)
+
+
+create procedure ToolApply_sp
+@EmId int
+as
+
+select Tool_tb.*
+from Tool_tb
+Join MainTool_tb on MainTool_tb.MainToolId=Tool_tb.MainToolId
+where Tool_tb.Apply1EmployeeId=@EmId and Tool_tb.IsMain1=1
+
+create procedure ToolApplys_sp
+@EmId int,
+@MainId int
+as
+
+select Tool_tb.*
+from Tool_tb
+Join MainTool_tb on MainTool_tb.MainToolId=Tool_tb.MainToolId
+where Tool_tb.Apply1EmployeeId=@EmId and Tool_tb.IsMain1=0 and Tool_tb.MainToolId=@MainId
+
+
+create procedure ToolApprove1_sp
+@EmId int
+as
+
+select Tool_tb.*
+from Tool_tb
+Join MainTool_tb on MainTool_tb.MainToolId=Tool_tb.MainToolId
+where Tool_tb.Apply2EmployeeId=@EmId and Tool_tb.IsMain2=1
+
+create procedure ToolApproves1_sp
+@EmId int,
+@MainId int
+as
+
+select Tool_tb.*
+from Tool_tb
+Join MainTool_tb on MainTool_tb.MainToolId=Tool_tb.MainToolId
+where Tool_tb.Apply2EmployeeId=@EmId and Tool_tb.IsMain2=0 and Tool_tb.MainToolId=@MainId
+
+create procedure ToolApprove2_sp
+@EmId int
+as
+
+select Tool_tb.*
+from Tool_tb
+Join MainTool_tb on MainTool_tb.MainToolId=Tool_tb.MainToolId
+where Tool_tb.Aplly3EmployeeId=@EmId 
+
+alter procedure ToolSum_sp
+@EmId int
+as
+
+select sum(cast(ToolNum_tb.Num1 as int)) as Sum1,sum(cast(ToolNum_tb.Num2 as int)) as Sum2,sum(cast(ToolNum_tb.Num3 as int)) as Sum3,sum(cast(ToolNum_tb.Num4 as int)) as Sum4,
+       sum(cast(ToolNum_tb.Num5 as int)) as Sum5,sum(cast(ToolNum_tb.Num6 as int)) as Sum6,sum(cast(ToolNum_tb.Num7 as int)) as Sum7,sum(cast(ToolNum_tb.Num8 as int)) as Sum8,
+	   sum(cast(ToolNum_tb.Num9 as int)) as Sum9,sum(cast(ToolNum_tb.Num10 as int)) as Sum10,sum(cast(ToolNum_tb.Num11 as int)) as Sum11,sum(cast(ToolNum_tb.Num12 as int)) as Sum12,
+	   sum(cast(ToolNum_tb.Num13 as int)) as Sum13,sum(cast(ToolNum_tb.Num14 as int)) as Sum14,sum(cast(ToolNum_tb.Num15 as int)) as Sum15,sum(cast(ToolNum_tb.Num16 as int)) as Sum16,
+       sum(cast(ToolNum_tb.Num17 as int)) as Sum17,sum(cast(ToolNum_tb.Num18 as int)) as Sum18,sum(cast(ToolNum_tb.Num19 as int)) as Sum19,sum(cast(ToolNum_tb.Num20 as int)) as Sum20,
+	   sum(cast(ToolNum_tb.Num21 as int)) as Sum21,sum(cast(ToolNum_tb.Num22 as int)) as Sum22,sum(cast(ToolNum_tb.Num23 as int)) as Sum23,sum(cast(ToolNum_tb.Num24 as int)) as Sum24,
+       sum(cast(ToolNum_tb.Num25 as int)) as Sum25,sum(cast(ToolNum_tb.Num26 as int)) as Sum26,sum(cast(ToolNum_tb.Num27 as int)) as Sum27,sum(cast(ToolNum_tb.Num28 as int)) as Sum28,
+	   sum(cast(ToolNum_tb.Num29 as int)) as Sum29,sum(cast(ToolNum_tb.Num30 as int)) as Sum30,sum(cast(ToolNum_tb.Num31 as int)) as Sum31,sum(cast(ToolNum_tb.Num32 as int)) as Sum32,
+	   sum(cast(ToolNum_tb.Num33 as int)) as Sum33,sum(cast(ToolNum_tb.Num34 as int)) as Sum34,sum(cast(ToolNum_tb.Num35 as int)) as Sum35,sum(cast(ToolNum_tb.Num36 as int)) as Sum36,
+       sum(cast(ToolNum_tb.Num37 as int)) as Sum37,sum(cast(ToolNum_tb.Num38 as int)) as Sum38,sum(cast(ToolNum_tb.Num39 as int)) as Sum39,sum(cast(ToolNum_tb.Num40 as int)) as Sum40
+from ToolNum_tb
+Join Tool_tb on Tool_tb.ToolNumId=ToolNum_tb.ToolNumId
+where Tool_tb.Aplly3EmployeeId=@EmId and Tool_tb.States=3
+

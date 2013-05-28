@@ -1,0 +1,18 @@
+行政部->综合部 行政主管->综合主管
+白杨：市场助理-市场部 员工角色-员工角色
+王娇：综合部经理-综合部 员工角色-部门经理角色
+祁总：申请立项 去掉
+
+视图里面：所有的行政部->综合部 状态为在职dbo.Employee_tb.State = 0
+
+VW_EmployeeIdOfXXX
+SELECT     dbo.Employee_tb.EmployeeId
+FROM         dbo.Employee_tb INNER JOIN
+                      dbo.Depart_tb ON dbo.Employee_tb.DepartId = dbo.Depart_tb.DepartId INNER JOIN
+                      dbo.Master_tb ON dbo.Employee_tb.EmployeeId = dbo.Master_tb.EmployeeId INNER JOIN
+                      dbo.RoleMaster_tb ON dbo.RoleMaster_tb.MasterId = dbo.Master_tb.MasterId INNER JOIN
+                      dbo.Role_tb ON dbo.Role_tb.RoleId = dbo.RoleMaster_tb.RoleId
+WHERE     (dbo.Depart_tb.DepartName = '综合部') AND (dbo.Role_tb.RoleName = '部门经理') AND (dbo.Employee_tb.State = 0)
+
+何春：市场经理->市场经理兼总经理助理
+

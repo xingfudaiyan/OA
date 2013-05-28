@@ -1,0 +1,6 @@
+vw_MsgGv
+
+SELECT     dbo.Message_tb.MessageId, dbo.Message_tb.Msg, dbo.Message_tb.MsgTime, dbo.Message_tb.EmployeeName, 
+                      dbo.Employee_tb.EmployeeName AS RecvName
+FROM         dbo.Message_tb INNER JOIN
+                      dbo.Employee_tb ON dbo.Employee_tb.EmployeeId = dbo.Message_tb.RecvEmployeeId

@@ -1,0 +1,10 @@
+obj\Debug\ResolveAssemblyReference.cache
+bin\OA.dll
+bin\OA.pdb
+bin\OA.BLL.dll
+bin\OA.DAL.dll
+bin\CanYouLib.Framework.dll
+bin\OA.BLL.pdb
+bin\OA.DAL.pdb
+obj\Debug\OA.dll
+obj\Debug\OA.pdb
